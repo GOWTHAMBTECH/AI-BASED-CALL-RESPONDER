@@ -1,0 +1,7 @@
+import os
+from twilio.rest  import TwilioRestClient
+client=TwiliRestClient(os.environ.get(“TWILIO_ACCCOUNT_SID”))
+client=TwiliRestClient(os.environ.get(“TWILIO_AUTH_TOKEN”))
+client.message.create(from_os.environ.get(‘TWILIO_PHON_NUMBER’),
+to=os.environ.get(‘CELL-PHONE_NUMBER’)
+body=’YOU JUST SEND SMS FROM PYTHON USING TWILIO’)
